@@ -712,10 +712,10 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                 case MEDIA_STOPPED:
                     //if we are readying the same file
                     if (this.audioFile.compareTo(file) == 0) {
-                        Log.d(LOG_TAG, "reset file");
+                        Log.d(LOG_TAG, "playing same file");
                     
                         //reset the audio file
-                        this.player.seekTo(0);
+                        //this.player.seekTo(0);
                         this.player.pause();
                         return true;
                     } else {
