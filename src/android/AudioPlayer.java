@@ -713,8 +713,8 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                     //if we are readying the same file
                     if (this.audioFile.compareTo(file) == 0) {
                         //reset the audio file
-                        player.seekTo(0);
-                        player.pause();
+                        this.player.seekTo(0);
+                        this.player.pause();
                         return true;
                     } else {
                         //reset the player
