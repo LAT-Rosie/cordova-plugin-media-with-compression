@@ -715,7 +715,7 @@ public class AudioPlayer implements OnCompletionListener, OnPreparedListener, On
                         Log.d(LOG_TAG, "playing same file");
                     
                         //reset the audio file
-                        //this.player.seekTo(0);
+                        this.player.seekTo(0);
                         this.player.pause();
                         return true;
                     } else {
